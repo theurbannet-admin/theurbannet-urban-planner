@@ -1,0 +1,164 @@
+/* Main auth section */
+
+.auth-page {
+  width: 100vw;
+  min-height: 100vh;
+  /* margin: 60px auto; */
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow:  20px 20px 39px #d9d9d9,
+             -20px -20px 39px #ffffff;
+  overflow: hidden;
+  height: 100%;
+  max-width: 1500px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Building with flex box first then making comparison between flex and grid */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+/* Left side */
+
+.auth-content {
+  padding: 60px;
+}
+
+.eyebrow {
+  color: var(--green);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.auth-content h1 {
+  font-size: 45px;
+  color: var(--brown);
+  margin-bottom: 20px;
+}
+
+.auth-content h1 span {
+  color: var(--orange);
+}
+
+.intro-text {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Form */
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  .role-selector {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
+  .name-row {
+    display: flex;
+    gap: 10px;
+
+    .name-label {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.auth-form label {
+  font-weight: bold;
+  color: var(--brown);
+}
+
+.custom-radio {
+  accent-color: var(--light-orange);
+  cursor: pointer;
+}
+.auth-form .role-selector {
+  display: flex;
+  gap: 20px;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.auth-form button {
+  background-color: #fff;
+  border: 2px solid var(--orange);
+  color: var(--brown);
+  padding: 15px;
+  /* border: none; */
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  /* box-shadow:  10px 8px 30px #b5b5b5,
+             -20px -20px 52px #ffffff; */
+  transition: transform 200ms ease-in-out;
+    &:active {
+      transform: scale(0.98);
+  }    
+}
+
+/* .auth-form button:hover {
+  background-color: var(--orange);
+} */
+
+/* Right side image */
+
+.auth-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mobile view */
+
+@media (max-width: 800px) {
+  .site-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .auth-card {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-content {
+    padding: 35px;
+  }
+
+  .auth-content h1 {
+    font-size: 35px;
+  }
+
+  .auth-image {
+    height: 400px;
+  }
+}

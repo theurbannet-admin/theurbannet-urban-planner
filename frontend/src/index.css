@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* Brand colours */
+:root {
+  --orange: #df5b2e;
+  --brown: #422918;
+  --black: #1d1d1b;
+  --light-orange: #e58b38;
+  --green: #284f29;
+  --cream: #f1eee3;
+  --black: #000000;
+  --white: #ffffff;
+  --offwhite: #F9F9F9
+}
+
+/* Presets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Whole page */
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--offwhite);
+  color: var(--black);
+}
+
+h1, h2, h3, .eyebrow {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Remove underline from links */
+a {
+  text-decoration: none;
+}
+

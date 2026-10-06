@@ -1,0 +1,58 @@
+/* Header */
+
+.site-header {
+  /* position: absolute;
+  top: 0;
+  /* left: 10%; */
+  /* z-index: 1;  */
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px 40px;
+  background-color: var(--white);
+  /* border: 1px solid var(--orange); */
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  /* --- THE GLASS EFFECT --- */
+  
+  /* 1. A highly transparent white background */
+  /* background: rgba(255, 255, 255, 0.15);  */
+  /* 2. The magic "frosted" blur that affects the image behind it */
+  /* backdrop-filter: blur(3px); */
+  /* -webkit-backdrop-filter: blur(12px); Required for Safari browsers */ 
+  /* 3. A delicate solid white edge to mimic light hitting the glass */
+  /* border: 1px solid rgba(255, 255, 255, 0.4); */
+  /* 4. A soft drop shadow so the glass detaches from the image slightly
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15); */
+}
+
+.logo-image {
+  width: 160px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: var(--black);
+  font-weight: 600;
+  transition: color 0.2s ease
+}
+
+.nav-links a:hover {
+  color: var(--orange);
+}
+
+.nav-button {
+  background-color: none;
+  border: 1.5px solid var(--orange);
+  color: var(--black) ;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+}
